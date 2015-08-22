@@ -7699,3 +7699,10 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+label.ng-required {
+  border-color: red; }
+  label.ng-required .input-label {
+    color: red; }
+  label.ng-required ~ label {
+    border-color: red; }

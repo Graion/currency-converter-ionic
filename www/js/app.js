@@ -32,7 +32,8 @@ angular.module('CurrencyConverter', ['ionic'])
   $stateProvider
     .state('page1', {
       url: '',
-      templateUrl: 'templates/currency-converter.html'
+      templateUrl: 'templates/currency-converter.html',
+      controller: 'CurrencyConverterCtrl'
     });
 
   // if none of the above states are matched, use this as the fallback
