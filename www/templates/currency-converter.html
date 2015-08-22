@@ -1,0 +1,26 @@
+<ion-view title="Conversor de Divisas">
+    <ion-content padding="true" class="has-header">
+        <div>
+            <p>Utilice este conversor de divisas gratuito para <strong>calcular divisas</strong> en tiempo real.</p>
+        </div>
+        <form>
+            <div class="spacer" style="width: 300px; height: 48px;"></div>
+            <label class="item item-input" name="expression">
+                <span class="input-label">Expresión</span>
+                <input type="text" placeholder="Ingresar expresión a evaluar.">
+            </label>
+            <label class="item item-select" name="Divisa">
+                <span class="input-label">Divisa</span>
+                <select>
+                    <option value="USD">USD</option>
+                    <option value="ARS">ARS</option>
+                </select>
+            </label>
+            <button class="button button-positive button-block button-large icon-right ion-calculator">Calcular</button>
+            <label class="item item-input" name="result">
+                <span class="input-label">Resultado</span>
+                <input type="text" placeholder="">
+            </label>
+        </form>
+    </ion-content>
+</ion-view>
