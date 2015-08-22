@@ -8,13 +8,14 @@
       </label>
       <label class="item item-select" name="Divisa">
         <span class="input-label">Divisa</span>
-        <select ng-options="currency for currency in currencies" ng-model="selectedCurrency"></select>
+        <select ng-options="currency.name for currency in currencies" ng-model="selectedCurrency"></select>
       </label>
       <button type="submit" class="button button-positive button-block icon-right ion-calculator">Calcular</button>
       <label class="item item-input disabled" name="result">
         <span class="input-label">Resultado</span>
         <span>{{ result }}</span>
       </label>
+      <p class="note">Tasa de cambio: {{ selectedCurrency.rate }}</p>
     </form>
   </ion-content>
 </ion-view>
