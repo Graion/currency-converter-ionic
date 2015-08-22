@@ -7706,3 +7706,6 @@ label.ng-required {
     color: red; }
   label.ng-required ~ label {
     border-color: red; }
+
+.item.item-select {
+  padding: 5px 16px; }

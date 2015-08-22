@@ -1,20 +1,16 @@
 <ion-view title="Conversor de Divisas">
   <ion-content padding="true" class="has-header">
-    <div>
-      <p>Utilice este conversor de divisas gratuito para <strong>calcular divisas</strong> en tiempo real.</p>
-    </div>
     <form name="CurrencyConverterForm" ng-submit="convert(expression, selectedCurrency)">
-      <div class="spacer" style="width: 300px; height: 48px;"></div>
       <label class="item item-input" name="expression"
         ng-class="{'ng-required': CurrencyConverterForm.$error.required && CurrencyConverterForm.$error.required[0].$touched}">
         <span class="input-label">Expresión</span>
-        <input type="text" placeholder="Ingresar expresión a evaluar." ng-model="expression" required>
+        <input type="text" placeholder="Ej: (3 * 10 ARS) + 5 USD" ng-model="expression" required>
       </label>
       <label class="item item-select" name="Divisa">
         <span class="input-label">Divisa</span>
         <select ng-options="currency for currency in currencies" ng-model="selectedCurrency"></select>
       </label>
-      <button type="submit" class="button button-positive button-block button-large icon-right ion-calculator">Calcular</button>
+      <button type="submit" class="button button-positive button-block icon-right ion-calculator">Calcular</button>
       <label class="item item-input disabled" name="result">
         <span class="input-label">Resultado</span>
         <span>{{ result }}</span>

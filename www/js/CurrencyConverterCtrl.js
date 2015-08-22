@@ -6,6 +6,6 @@ angular.module('CurrencyConverter')
   ];
   $scope.selectedCurrency = $scope.currencies[0];
   $scope.convert = function (expression, selectedCurrency) {
-    $scope.result = expression + ' ' + selectedCurrency;
+    $scope.result = parseInt(expression) + ' ' + selectedCurrency;
   };
 });
